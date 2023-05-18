@@ -28,5 +28,14 @@ store = {
 #
 # Вывести суммарную стоимость каждого товара в магазине в формате:
 # "<товар> - <кол-во> шт, стоимость <общая стоимость> руб"
+for item in titles:
+    item_name = item
+    item_id = titles[item]
+    item_qty = 0
+    item_price = 0
+    for i in store[item_id]:
+        item_qty = i['quantity']
+        item_price = i['price'] * item_qty
+        print(item_name, "- кол-во", item_qty, "шт. Стоимость", item_price, "руб.")
 
 # Пример: "Кроссовки тип 3 (Adidas) - 31 шт, стоимость 50747 руб"
