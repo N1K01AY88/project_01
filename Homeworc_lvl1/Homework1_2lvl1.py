@@ -60,3 +60,8 @@ print ('Случайные песни:', random.choice(my_favorite_songs)
 # Дополнительно 
 # Пункт D. 
 # Переведите минуты и секунды в формат времени. Используйте модуль datetime
+
+import datetime
+
+timeobj= datetime.time(3, 3, 00)
+print(timeobj)
